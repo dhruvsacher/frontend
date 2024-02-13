@@ -11,8 +11,8 @@ const Navbar=()=>{
     return (
         <div className="navbar">
             <div className="nav-logo">
-                <a href="http://localhost:3000/"><img className="a" src={logo} alt=""></img></a>
-                <a href="http://localhost:3000/"><p>SHOPPERS</p></a>
+                <Link to="/"><img className="a" src={logo} alt=""></img></Link>
+                <Link to="/"><p>SHOPPERS</p></Link>
             </div>
             <ul className="nav-menu">
                 <li onClick={() => { setMenu("Shop") }}><Link style={{ textDecoration: "none" }} to="/">Shop</Link> {Menu === 'Shop' ? <hr /> : <></>}</li>
